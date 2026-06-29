@@ -35,19 +35,19 @@ export function RegisterForm() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "sengkim",
-      phoneNumber: "0123122513",
+      username: "dana",
+      phoneNumber: "012345678",
       address: {
         addressLine1: "Optional",
         addressLine2: "Optional",
         road: "Optional",
         linkAddress: "Optional",
       },
-      email: "taing.sengkim3110@gmail.com",
-      password: "KimSeng@17",
-      confirmPassword: "KimSeng@17",
+      email: "dorndana8899@gmail.com",
+      password: "dananana8899",
+      confirmPassword: "dananana8899",
       profile:
-        "https://i.pinimg.com/736x/17/23/43/1723437d84a4428547624048da09ca61.jpg",
+        "https://i.pinimg.com/736x/db/d6/8b/dbd68b8860a77e1d15201b2938db5c02.jpg",
     },
   });
   const [register] = useRegisterUserMutation();

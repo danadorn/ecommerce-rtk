@@ -15,7 +15,7 @@ import {
   FileUploadList,
   FileUploadTrigger,
 } from "@/components/ui/file-upload";
-export function FileUploadFillProgressDemo() {
+export function FileUploadFillProgress() {
   const [files, setFiles] = React.useState<File[]>([]);
   const onFilesChange = React.useCallback((files: File[]) => {
     setFiles(files);

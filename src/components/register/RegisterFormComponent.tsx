@@ -8,7 +8,7 @@ import * as z from "zod";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
 import { Field, FieldError, FieldGroup, FieldLabel } from "../ui/field";
 import { Input } from "../ui/input";
-import { FileUploadFillProgressDemo } from "../fileUpload/FileUpload";
+import { FileUploadFillProgress } from "../fileUpload/FileUpload";
 import { Button } from "../ui/button";
 
 const formSchema = z.object({
@@ -196,7 +196,7 @@ export function RegisterForm() {
                 </Field>
               )}
             />
-            <FileUploadFillProgressDemo />
+            <FileUploadFillProgress />
           </FieldGroup>
         </form>
       </CardContent>

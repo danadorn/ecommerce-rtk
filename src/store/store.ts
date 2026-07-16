@@ -8,7 +8,7 @@ export const makeStore = () => {
   return configureStore({
     reducer: {
       count: countSlice.reducer, 
-      [ecommerceApi.reducerPath]: ecommerceApi.reducer
+      ecommerceApi: ecommerceApi.reducer
     },
     middleware: (getDefaultMiddleware) => 
       getDefaultMiddleware().concat(ecommerceApi.middleware)
